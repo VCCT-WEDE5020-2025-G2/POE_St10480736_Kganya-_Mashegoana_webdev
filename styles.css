@@ -1,0 +1,69 @@
+body { 
+    background-color: #fff8f0; 
+    font-family: 'Times New Roman', Times, serif; /* changed font */
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Navigation */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+nav {
+    background-color: #573c23;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+ serviceslist {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto; }
+
+
+    .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: px; /* space between images */
+  margin: 40px auto;
+  max-width: 900px; /* optional: limits how wide it gets */
+}
+
+.image-gallery img {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for images */
+.image-gallery img:hover {
+  transform: scale(1.05); /* zoom in slightly */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;}
+
+
+
+
