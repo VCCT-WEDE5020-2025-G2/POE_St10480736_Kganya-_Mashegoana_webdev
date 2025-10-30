@@ -48,6 +48,13 @@ These include:
 
 # Github link 
 
+# Milstone 2 
+Addedd css on all the pages of the html 
+<img width="1364" height="671" alt="image" src="https://github.com/user-attachments/assets/98f968d2-349e-42b3-8382-2b7f014cd3ba" />
+<img width="1359" height="679" alt="image" src="https://github.com/user-attachments/assets/b47f5780-3e5b-4831-bdec-920ed54984c3" />
+
+
+
 https://github.com/St10480736
 
 
