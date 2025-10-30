@@ -114,3 +114,18 @@ ul#serviceslist {
   margin: 40px auto;
   max-width: 900px; /* optional: limits how wide it gets */
 }
+h5 {
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+}
+form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-self: center;
+}
