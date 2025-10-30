@@ -49,9 +49,29 @@ These include:
 # Github link 
 
 # Milstone 2 
-Addedd css on all the pages of the html 
+- Addedd css on all the pages of the html
+- Fixed some of the Html code
+- A more styled navigation
+- Consistent colors used
+- Improved page layout
+- Used Google forms for the enquiry page 
+
+
+#Tools used
+- Visual Code
+- css
+- Html
+- Github
+- google forms 
+
+
+#Screan shots of the CSS added to the HTML
 <img width="1364" height="671" alt="image" src="https://github.com/user-attachments/assets/98f968d2-349e-42b3-8382-2b7f014cd3ba" />
 <img width="1359" height="679" alt="image" src="https://github.com/user-attachments/assets/b47f5780-3e5b-4831-bdec-920ed54984c3" />
+<img width="1352" height="673" alt="image" src="https://github.com/user-attachments/assets/b121401e-208e-4a5f-b715-a6b0e666aa44" />
+<img width="1348" height="667" alt="image" src="https://github.com/user-attachments/assets/6e7a1781-b9e8-4015-b5bf-56d066567505" />
+<img width="1360" height="639" alt="image" src="https://github.com/user-attachments/assets/502edbeb-b58b-4c2a-8629-842d49407ec2" />
+
 
 
 
