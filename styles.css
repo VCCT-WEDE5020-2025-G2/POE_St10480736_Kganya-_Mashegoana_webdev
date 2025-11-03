@@ -418,13 +418,11 @@ iframe {
     font-size: 0.95rem;
 }
 
-/* ==========================
-   NAVIGATION SEARCH BAR
-========================== */
+
 .search-bar {
     display: flex;
     align-items: center;
-    gap: 8px; /* space between input and button */
+    gap: 8px; 
 }
 
 .search-bar input {
@@ -437,7 +435,7 @@ iframe {
 }
 
 .search-bar input:focus {
-    border-color: #947143; /* brown focus */
+    border-color: #947143; 
     box-shadow: 0 0 5px #d3d0d2;
 }
 
@@ -445,7 +443,7 @@ iframe {
     padding: 7px 14px;
     border: none;
     border-radius: 5px;
-    background-color: #926235; /* brown button */
+    background-color: #926235; 
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -457,9 +455,7 @@ iframe {
     transform: scale(1.05);
 }
 
-/* ==========================
-   FILTERED SERVICES ANIMATION
-========================== */
+
 .service-card {
     opacity: 1;
     transform: translateY(0);
@@ -469,10 +465,51 @@ iframe {
 .service-card.hide {
     opacity: 0;
     transform: translateY(20px);
-    pointer-events: none; /* prevents clicking hidden cards */
+    pointer-events: none; 
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+footer {
+    background-color: #573c23; 
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 3px solid #d7b98c; 
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+footer .social-icons a:hover {
+    color: #8f6f25; /* gold hover */
+    transform: scale(1.15);
+}
+
+/* Make footer clean on mobile */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 14px;
+    }
+
+    footer .social-icons a {
+        font-size: 18px;
+    }
 }
 
