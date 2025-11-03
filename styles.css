@@ -386,7 +386,7 @@ iframe {
 
 /* Individual Service Card */
 .service-card {
-    border: 2px solid #ffb400;
+    border: 2px solid #926829;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -418,4 +418,61 @@ iframe {
     font-size: 0.95rem;
 }
 
+/* ==========================
+   NAVIGATION SEARCH BAR
+========================== */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between input and button */
+}
+
+.search-bar input {
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #947143; /* brown focus */
+    box-shadow: 0 0 5px #d3d0d2;
+}
+
+.search-bar button {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #926235; /* brown button */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #d17c0c;
+    transform: scale(1.05);
+}
+
+/* ==========================
+   FILTERED SERVICES ANIMATION
+========================== */
+.service-card {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.service-card.hide {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none; /* prevents clicking hidden cards */
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 

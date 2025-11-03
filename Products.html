@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thando's Kitchen | Services</title>
+    <title>Thando's Kitchen | Products</title>
     <link rel="icon" href="images/Cream and Black Simple Illustration Catering Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body id="Homebody">
+
+    
 
    
     <nav id="navbar">
@@ -54,28 +56,28 @@
             {
                 name: "Wedding Catering",
                 price: 6000,
-                description: "Customizable menu options to make your special day perfect.",
+                description: "Wedding  menu options to make your special day perfect.",
                 image: "Images/567.jpg",
                 link: "Weddings.html"
             },
             {
                 name: "Corporate Catering",
                 price: 6700,
-                description: "Full menu options to suit your corporate events.",
+                description: "Coroprate menu options to suit your corporate events.",
                 image: "Images/012.jpg",
                 link: "Corporate.html"
             },
             {
                 name: "Birthday Catering",
                 price: 2600,
-                description: "Fun and delicious menu options for your celebration.",
+                description: "Birthday menu options for your celebration.",
                 image: "Images/654.jpg",
                 link: "Birthday.html"
             },
             {
                 name: "Funeral Catering",
                 price: 3000,
-                description: "Comforting menu options for delicate times.",
+                description: "Funeral  menu options for delicate times.",
                 image: "Images/123.jpg",
                 link: "Funeral.html"
             }
@@ -103,18 +105,19 @@
         // Initial render
         renderServices(services);
 
-        // Search functionality
+        // Search functionality with the help of AI 
         document.getElementById("search").addEventListener("input", e => {
             const term = e.target.value.toLowerCase();
             const filtered = services.filter(s => s.name.toLowerCase().includes(term));
             renderServices(filtered);
         });
 
-        // Sort by price
+        
         document.getElementById("sortPrice").addEventListener("click", () => {
             const sorted = [...services].sort((a,b) => a.price - b.price);
             renderServices(sorted);
         });
     </script>
+    <script src="java.js"></script>
 </body>
 </html>
