@@ -262,3 +262,160 @@ ul#serviceslist {
     box-shadow: 0 4px 15px rgba(202, 106, 16, 0.1);
     text-align: center;
 }
+
+.contact * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+
+.contact {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.contact h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #573c23;
+  margin-bottom: 40px;
+}
+
+
+.location-frame {
+  border: 3px solid #945309f1;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  background: #fafafa;
+}
+
+.location-details {
+  background-color: #573c23;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.location-details p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.location-details a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* MAP */
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+//fade in animation
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+//slide up animation
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1.3s ease forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* FLOATING PARTICLES */
+#Homebody::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgb(252, 248, 248) 2px, transparent 2px);
+  background-size: 80px 80px;
+  animation: floatDots 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes floatDots {
+  from { transform: translateY(0); }
+  to { transform: translateY(-40px); }
+}
+#search, #sortPrice {
+    padding: 8px 12px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+/* Individual Service Card */
+.service-card {
+    border: 2px solid #ffb400;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: #fafafa;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    padding: 10px;
+    color: #573c23;
+    font-size: 1.2rem;
+}
+
+.service-card p {
+    padding: 0 10px 10px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thando's Kitchen | Services</title>
+    <link rel="icon" href="images/Cream and Black Simple Illustration Catering Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body id="Homebody">
+
+    <!-- ============================
+         NAVIGATION (KEEP UNCHANGED)
+    ============================ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/Cream and Black Simple Illustration Catering Logo.png" alt="Thando's Kitchen Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="Weddings.html">Wedding Catering</a>
+                        <a href="Corporate.html">Corporate Catering</a>
+                        <a href="Birthday.html">Birthday Catering</a>
+                        <a href="Funeral.html">Funeral Catering</a>
+                        <a href="Products.html">Products</a>
+                    </div>
+                </li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Gallary.html">Gallery</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================
+         PAGE HEADER
+    ============================ -->
+    <h2>Our Catering Services</h2>
+
+    <div class="search-sort-container" style="text-align:center;">
+        <input type="text" id="search" placeholder="Search services...">
+        <button id="sortPrice">Sort by Price</button>
+    </div>
+
+    <!-- ============================
+         SERVICES GRID
+    ============================ -->
+    <div id="services-list" class="services-grid"></div>
+
+    <!-- ============================
+         DYNAMIC JAVASCRIPT
+    ============================ -->
+    <script>
+        const services = [
+            {
+                name: "Wedding Catering",
+                price: 6000,
+                description: "Customizable menu options to make your special day perfect.",
+                image: "Images/567.jpg",
+                link: "Weddings.html"
+            },
+            {
+                name: "Corporate Catering",
+                price: 6700,
+                description: "Full menu options to suit your corporate events.",
+                image: "Images/012.jpg",
+                link: "Corporate.html"
+            },
+            {
+                name: "Birthday Catering",
+                price: 2600,
+                description: "Fun and delicious menu options for your celebration.",
+                image: "Images/654.jpg",
+                link: "Birthday.html"
+            },
+            {
+                name: "Funeral Catering",
+                price: 3000,
+                description: "Comforting menu options for delicate times.",
+                image: "Images/123.jpg",
+                link: "Funeral.html"
+            }
+        ];
+
+        const container = document.getElementById("services-list");
+
+        function renderServices(list) {
+            container.innerHTML = "";
+            list.forEach(service => {
+                const card = document.createElement("div");
+                card.classList.add("service-card");
+                card.innerHTML = `
+                    <a href="${service.link}">
+                        <img src="${service.image}" alt="${service.name}">
+                        <h3>${service.name}</h3>
+                        <p>Price: R${service.price}</p>
+                        <p>${service.description}</p>
+                    </a>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Initial render
+        renderServices(services);
+
+        // Search functionality
+        document.getElementById("search").addEventListener("input", e => {
+            const term = e.target.value.toLowerCase();
+            const filtered = services.filter(s => s.name.toLowerCase().includes(term));
+            renderServices(filtered);
+        });
+
+        // Sort by price
+        document.getElementById("sortPrice").addEventListener("click", () => {
+            const sorted = [...services].sort((a,b) => a.price - b.price);
+            renderServices(sorted);
+        });
+    </script>
+</body>
+</html>

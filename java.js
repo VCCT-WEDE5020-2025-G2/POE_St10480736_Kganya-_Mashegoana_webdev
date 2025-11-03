@@ -36,3 +36,17 @@ serviceItems.forEach(item => {
         `;
     });
 });
+//scrollling smoothly to sections
+
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if(target){
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+

@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thando's Kitchen</title>
+    <title>Thando's Kitchen Gallery</title>
     <link rel="icon" href="images/Cream and Black Simple Illustration Catering Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-</head>
 
+    <style>
+        /* CLASSIC GALLERY STYLES */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            color: #573c23;
+        }
+    </style>
+</head>
 <body id="Homebody">
 
     <!-- NAVIGATION -->
@@ -21,7 +50,6 @@
 
             <ul class="nav-links">
                 <li><a href="About.html">About</a></li>
-
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Services</a>
                     <div class="dropdown-content">
@@ -29,41 +57,29 @@
                         <a href="Corporate.html">Corporate Catering</a>
                         <a href="Birthday.html">Birthday Catering</a>
                         <a href="Funeral.html">Funeral Catering</a>
+                        <a href="Products.html">Products</a>
                     </div>
                 </li>
-
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Home.html">home</a></li>
+                <li><a href="Home.html">Home</a></li>
                 <li><a href="enquiry.html">Enquiry</a></li>
             </ul>
 
         </div>
     </nav>
 
-    <Br></Br>
-    <br> 
+    <h1>Our Gallery</h1>
+
     <div class="image-gallery">
-        <!--Images Section-->
-    <img src="images/123.jpg" 
-    alt="Catering Image"
-    width="200" height="200">
-    <img src="images/345.jpg" alt="Catering Image"
-    width="200" height="200">
-    <img src="Images/012.jpg" alt="Catering Image"
-    width="200" height="200">
-    <br>
-    <img src="Images/567.jpg" alt="Catering Image"
-    width="200" height="200">
-    <img src="Images/Birthday.jpg" alt="Catering Image"
-    width="200" height="200">
-    <img src="Images/654.jpg" alt="Catering Image"
-    width="200" height="200">
-    <img src="Images/Cooperate catering.jpg" alt="Catering Image"
-    width="200" height="200">
-    <img src="Images/Wedding catering.jpg" alt="Catering Image"
-    width="200" height="200">
+        <img src="images/123.jpg" alt="Catering Image">
+        <img src="images/345.jpg" alt="Catering Image">
+        <img src="Images/012.jpg" alt="Catering Image">
+        <img src="Images/567.jpg" alt="Catering Image">
+        <img src="Images/Birthday.jpg" alt="Catering Image">
+        <img src="Images/654.jpg" alt="Catering Image">
+        <img src="Images/Cooperate catering.jpg" alt="Catering Image">
+        <img src="Images/Wedding catering.jpg" alt="Catering Image">
     </div>
-    <br>
-    <br>
+
 </body>
 </html>
